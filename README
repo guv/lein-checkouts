@@ -1,0 +1,18 @@
+# lein-checkouts
+
+This lein plugin performs one of the lein tasks (clean, deps, compile, jar, uberjar, install) on the current project and makes sure that the dependency projects 
+which linked in the "checkouts" folder are built as well.
+
+
+## Usage
+
+Depending on the specified task different actions are performed on the depency projects.
+
+- clean, deps, install: The task is executed for the project and its dependency projects.
+- jar, uberjar: All dependency projects are "install"ed and the given task is executed on the current project.
+
+## License
+
+Copyright (C) 2011 FIXME
+
+Distributed under the Eclipse Public License, the same as Clojure.
