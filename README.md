@@ -15,7 +15,12 @@ Include it as a dev-dependency in your project.clj is another option:
 
 ## Usage
 
-Depending on the specified task different actions are performed on the depency projects.
+When using leiningen you can use so called "checkout dependencies" by creating a "checkouts" folder that contains symbolic links 
+on other projects you want to use without having to build them.
+
+This plugin enables you to build and install all of those dependency projects for a release of your project (e.g. jar, uberjar).
+
+Depending on the specified task different actions are performed on the dependency projects.
 
 - clean, deps, install: The task is executed for the project and its dependency projects.
 - jar, uberjar: All dependency projects are "install"ed and the given task is executed on the current project.
