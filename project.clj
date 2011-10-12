@@ -6,6 +6,6 @@
             :comments "same as Clojure"}
 
 
-  	:dev-dependencies [[org.clojure/clojure "1.2.1"]]
+  	:dev-dependencies [[org.clojure/clojure "1.2.1"] [lein-clojars "0.7.0"]]
 	:eval-in-leiningen true
 )
