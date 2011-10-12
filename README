@@ -13,6 +13,6 @@ Depending on the specified task different actions are performed on the depency p
 
 ## License
 
-Copyright (C) 2011 FIXME
+Copyright (C) 2011 Gunnar Völkel
 
 Distributed under the Eclipse Public License, the same as Clojure.

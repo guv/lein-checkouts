@@ -1,4 +1,9 @@
 (ns leiningen.checkouts
+  "Executes a leiningen task on all \"checkouts\" dependencies."
+  {
+   :author "Gunnar Völkel
+   :added "1.0.0"
+  }
   (:require
     [leiningen.compile :as lc]
   )  
