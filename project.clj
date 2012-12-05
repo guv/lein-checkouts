@@ -5,7 +5,17 @@
             :distribution :repo
             :comments "same as Clojure"}
 
+  :profiles {
+    :dev {
+      :dependencies [
+                      [org.clojure/clojure "1.4.0"]
+                    ]
+      :plugins [[lein-clojars "0.9.1"]]
+    }
 
-  	:dev-dependencies [[org.clojure/clojure "1.2.1"] [lein-clojars "0.7.0"]]
-	:eval-in-leiningen true
+
+
+  }
+  
+  :eval-in-leiningen true
 )
