@@ -6,9 +6,11 @@
   }
   (:require
     [leiningen.compile :as lc]
+    [leiningen.core.project :as project]
   )  
   (:use
-    [leiningen.core :only (apply-task read-project task-not-found)]
+    [leiningen.core.main :only (apply-task task-not-found)]
+    
     [clojure.string :only (join)]    
   )
   (:import
@@ -37,7 +39,7 @@
   
 (defn get-project-data
   [^File dir]
-  (read-project (.getAbsolutePath (File. dir "project.clj")))
+  (project/read (.getAbsolutePath (File. dir "project.clj")))
 )
 
 
@@ -112,7 +114,7 @@
 
 (defn perform-lein-task
   [task-name, project]
-  (apply-task task-name (:data project) [] task-not-found)
+  (apply-task task-name (:data project) [])
 )
 
 (def clean-task "clean")
