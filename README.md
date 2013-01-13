@@ -5,13 +5,15 @@ which linked in the "checkouts" folder are built as well.
 
 ## Install
 
-You can install this plugin via: 
+You can use this plugin in a single project by specifying the following in its project.clj: 
+```clj
+:plugins [[lein-checkouts "1.1.0"]]
+```
 
-    $ lein plugin install lein-checkouts "1.0.0"
-
-Include it as a dev-dependency in your project.clj is another option:
-
-    :dev-dependencies [[lein-checkouts "1.0.0"]]
+To be able to use the plugin in every project, add it to your ```~/.lein/profiles.clj``` like this:
+```clj
+{:user {:plugins [[lein-checkouts "1.1.0"]]}}
+```
 
 ## Usage
 
@@ -27,6 +29,6 @@ Depending on the specified task different actions are performed on the dependenc
 
 ## License
 
-Copyright (C) 2011 Gunnar Völkel
+Copyright (C) 2011-2013 Gunnar Völkel
 
 Distributed under the Eclipse Public License, the same as Clojure.
